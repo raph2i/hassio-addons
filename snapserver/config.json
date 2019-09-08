@@ -7,7 +7,7 @@
   "boot": "auto",
   "map": ["share:rw"],
   "options": { 
-    "snapserveropts": "-d -s pipe:///share/snapfifo/librespot?name=SpotifyConnect"
+    "snapserveropts": "-d -s pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2"
   },
   "schema": {
     "snapserveropts": "str"
