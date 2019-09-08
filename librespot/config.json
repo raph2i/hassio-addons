@@ -1,0 +1,18 @@
+{
+  "name": "librespot",
+  "version": "beta",
+  "slug": "librespot",
+  "description": "spotify",
+  "startup": "services",
+  "boot": "auto",
+  "map": ["share:rw"],
+  "host_network": true,
+  "host_dbus": true,
+  "options": { 
+    "librespotopts": "-v -n HomeAssistant --backend pipe --device /share/snapfifo/librespot"
+  },
+  "schema": {
+    "librespotopts": "str"
+   },
+  "arch": ["armhf", "aarch64", "amd64"]
+  }

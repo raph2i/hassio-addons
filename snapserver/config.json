@@ -1,0 +1,17 @@
+{
+  "name": "snapcast-server",
+  "version": "beta",
+  "slug": "snapcastserver",
+  "description": "Snapcast server",
+  "startup": "system",
+  "boot": "auto",
+  "map": ["share:rw"],
+  "options": { 
+    "snapserveropts": "-d -s pipe:///share/snapfifo/librespot?name=SpotifyConnect"
+  },
+  "schema": {
+    "snapserveropts": "str"
+   },
+  "ports": {"1704/tcp": 1704, "1705/tcp": 1705},
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"]
+  }
