@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2019
+Copyright (c) 2020
 Raphael Pertl <github@pertl.tech>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
