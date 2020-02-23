@@ -1,3 +1,7 @@
 # raphii's `HASS.IO` Repository
-This is the Home Assisant's _HASS.IO_ add-ons repository.
+Hey!
+This is my Home Assistant's _Supervisor_ add-ons repository.
+
+All Addons compile on your machine at installation, let it work.
+Librespot takes 5-15 minutes to build as an example.
 
