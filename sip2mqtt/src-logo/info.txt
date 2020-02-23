@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Barlow-Regular
+font link: https://fonts.google.com/specimen/Barlow
+font author: Jeremy Tribby
+font author site: https://tribby.com/
+
+
+icon designer: Tom Walsh
+icon designer link: /tomwalshdesign
+        
+{"bg":"transparent","icon-gradient-0":"#007DE8","icon-gradient-1":"#A1C3DB","font":"#000000","slogan":"#141414"}
+      

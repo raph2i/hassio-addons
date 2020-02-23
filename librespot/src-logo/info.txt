@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Renner-Medium
+font link: http://indestructibletype.com/BuyRenner.html
+font author: indestructible type*
+font author site: http://indestructibletype.com/Home.html
+Slogan Font: Renner-Thin.otf
+
+icon designer: Joey Hiller
+icon designer link: /jthiller
+        
+{"bg":"#4D6552","icon":"#D22C9B","font":"#FFFFFF","slogan":"#ffffff"}
+      
