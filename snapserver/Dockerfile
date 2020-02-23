@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 #Install snapcast
-RUN apk add --no-cache snapcast-server jq bash
+RUN apk add --no-cache snapcast jq bash
 
 # Copy data for add-on
 COPY run.sh /
