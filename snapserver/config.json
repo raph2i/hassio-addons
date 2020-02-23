@@ -1,17 +1,55 @@
 {
   "name": "snapcast-server",
-  "version": "beta",
+  "version": "latest",
   "slug": "snapcastserver",
   "description": "Snapcast server",
   "startup": "system",
   "boot": "auto",
   "map": ["share:rw"],
   "options": { 
-    "snapserveropts": "-d -s pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2"
+    "stream": {
+        "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "pipe:///share/snapfifo/mopidy?name=Mopidy&sampleformat=44100:16:2"],
+        "buffer": "1000",
+        "codec": "flac",
+        "send_to_muted": "false",
+        "sampleformat": "48000:16:2"
+        },
+    "http": {
+        "enabled": "true",
+        "doc_root": " "
+        },
+    "tcp": {
+        "enabled": "true"
+        },
+    "logging": {
+        "enabled": "true"
+        },
+    "server": {
+        "threads": "-1"
+        }
   },
   "schema": {
-    "snapserveropts": "str"
+    "stream": {
+        "streams": ["str"],
+        "buffer": "int",
+        "codec": "str",
+        "send_to_muted": "str",
+        "sampleformat": "str"
+        },
+    "http": {
+        "enabled": "str",
+        "doc_root": "str"
+        },
+    "tcp": {
+        "enabled": "str"
+        },
+    "logging": {
+        "enabled": "str"
+        },
+    "server": {
+        "threads": "int"
+        }
    },
-  "ports": {"1704/tcp": 1704, "1705/tcp": 1705},
+  "ports": {"1704/tcp": 1704, "1705/tcp": 1705, "1780/tcp": 1780},
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"]
   }
