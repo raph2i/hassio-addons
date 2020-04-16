@@ -1,6 +1,7 @@
 #!/usr/bin/env bashio
 
 mkdir -p /share/snapfifo
+mkdir -p /share/snapcast
 
 config=/etc/snapserver.conf
 
@@ -33,6 +34,9 @@ echo "debug = $(bashio::config 'logging.enabled')" >> "${config}"
 
 echo "[server]" >> "${config}"
 echo "threads = $(bashio::config 'server.threads')" >> "${config}"
+
+echo "[server]" >> "${config}"
+echo "datadir = $(bashio::config 'server.datadir')" >> "${config}"
 
 bashio::log.info "Starting SnapServer..."
 

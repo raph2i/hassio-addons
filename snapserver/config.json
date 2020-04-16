@@ -25,7 +25,8 @@
         "enabled": "true"
         },
     "server": {
-        "threads": "-1"
+        "threads": "-1",
+        "datadir": "/share/snapcast/"
         }
   },
   "schema": {
@@ -47,7 +48,8 @@
         "enabled": "str"
         },
     "server": {
-        "threads": "int"
+        "threads": "int",
+        "datadir": "str"
         }
    },
   "ports": {"1704/tcp": 1704, "1705/tcp": 1705, "1780/tcp": 1780},
