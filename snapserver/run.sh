@@ -35,6 +35,9 @@ echo "debug = $(bashio::config 'logging.enabled')" >> "${config}"
 echo "[server]" >> "${config}"
 echo "threads = $(bashio::config 'server.threads')" >> "${config}"
 
+echo "[server]" >> "${config}"
+echo "datadir = $(bashio::config 'server.datadir')" >> "${config}"
+
 bashio::log.info "Starting SnapServer..."
 
 /usr/bin/snapserver -c /etc/snapserver.conf
