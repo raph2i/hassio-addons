@@ -1,8 +1,8 @@
 {
-  "name": "snapcast-server",
+  "name": "snapcast-server-with-librespot",
   "version": "latest",
   "slug": "snapcastserver",
-  "description": "Snapcast server",
+  "description": "Snapcast server with Librespot",
   "startup": "system",
   "boot": "auto",
   "map": ["share:rw"],
