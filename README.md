@@ -1,4 +1,4 @@
-# raphii's `HASS.IO` Repository
+# Almostserious `HASS.IO` Repository
 Hey!
 This is my Home Assistant's _Supervisor_ add-ons repository.
 
