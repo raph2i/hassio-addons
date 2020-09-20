@@ -1,6 +1,6 @@
 {
   "name": "snapcast-server-with-librespot",
-  "version": "latest",
+  "version": "0.21",
   "slug": "snapcastserver",
   "description": "Snapcast server with Librespot",
   "startup": "system",
