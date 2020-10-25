@@ -5,8 +5,8 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 #Install snapcast
-RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories && apk add --no-cache soxr snapcast bash
-
+RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories && apk add --no-cache snapcast bash
+RUN apk add --upgrade soxr
 
 
 # Copy data for add-on
