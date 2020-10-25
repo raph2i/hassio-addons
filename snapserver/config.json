@@ -1,8 +1,8 @@
 {
-  "name": "snapcast-server-with-librespot",
-  "version": "0.21",
+  "name": "snapcast-server-with-soxr",
+  "version": "0.22",
   "slug": "snapcastserver",
-  "description": "Snapcast server with Librespot",
+  "description": "Snapcast server with Soxr",
   "startup": "system",
   "boot": "auto",
   "map": ["share:rw"],
