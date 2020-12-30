@@ -1,7 +1,7 @@
 {
   "name": "IPerf3 Server",
   "version": "0.1",
-  "slug": "IPerf3",
+  "slug": "iperf3",
   "description": "Network Speed Test using IPerf3",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
