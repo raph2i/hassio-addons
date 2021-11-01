@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 
 #Install librespot
 
-RUN apk -U add curl cargo portaudio-dev protobuf-dev \
+RUN apk -U add libgcc curl cargo portaudio-dev protobuf-dev \
  && cd /root \
  && curl -LO https://github.com/librespot-org/librespot/archive/refs/tags/v0.3.1.zip \
  && unzip v0.3.1.zip \
