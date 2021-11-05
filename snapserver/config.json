@@ -1,14 +1,14 @@
 {
-  "name": "snapcast-server-with-soxr",
-  "version": "0.22",
+  "name": "snapcast-server",
+  "version": "0.25",
   "slug": "snapcastserver",
-  "description": "Snapcast server with Soxr",
+  "description": "Snapcast Server",
   "startup": "system",
   "boot": "auto",
   "map": ["share:rw"],
   "options": { 
     "stream": {
-        "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "pipe:///share/snapfifo/mopidy?name=Mopidy&sampleformat=44100:16:2"],
+        "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "pipe:///share/snapfifo/mopidy?name=Mopidy&sampleformat=44100:16:2", "tcp://0.0.0.0?port=4953&name=snapbroadcast"],
         "buffer": "1000",
         "codec": "flac",
         "send_to_muted": "false",
@@ -52,6 +52,6 @@
         "datadir": "str"
         }
    },
-  "ports": {"1704/tcp": 1704, "1705/tcp": 1705, "1780/tcp": 1780},
+  "ports": {"1704/tcp": 1704, "1705/tcp": 1705, "1780/tcp": 1780, "4953/tcp": 4953},
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"]
   }
