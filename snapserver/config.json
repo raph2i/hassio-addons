@@ -5,6 +5,7 @@
   "description": "Snapcast Server",
   "startup": "system",
   "boot": "auto",
+  "init": false,
   "map": ["share:rw"],
   "options": { 
     "stream": {
