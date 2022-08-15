@@ -5,6 +5,7 @@
   "description": "Snapcast client",
   "startup": "services",
   "boot": "auto",
+  "init": false,
   "audio": true,
   "options": { 
     "snapclientopts": "-h snapcastserver"
